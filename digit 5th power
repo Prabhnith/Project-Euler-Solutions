@@ -1,0 +1,9 @@
+total=[]
+for i in xrange(4000,10000000):
+    numb = map(int,list(str(i)))
+
+    if i == sum([x**5 for x in numb]):
+        print i
+        total.append(i)
+
+print "\n",sum(total)
